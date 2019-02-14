@@ -1,9 +1,8 @@
 ---
 templateKey: blog-post
 title: '2019 [NEW] F.U.C.T SSDD JAPAN WINTER SHEEP DUMBLE JACKET International'
-date: 2019-02-12T15:04:10.000Z
-description: >-
-  Fuct new outer
+date: 2019-02-14T09:26:10.000Z
+description: Fuct new outer
 tags:
   - outer
   - fuct
