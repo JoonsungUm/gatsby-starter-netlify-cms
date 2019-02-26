@@ -53,7 +53,7 @@ export const pageQuery = graphql`
             templateKey
             mainImage {
               childImageSharp {
-                fluid(maxWidth: 526, quality: 92) {
+                fluid(maxWidth: 526, quality: 72) {
                   ...GatsbyImageSharpFluid
                 }
               }
