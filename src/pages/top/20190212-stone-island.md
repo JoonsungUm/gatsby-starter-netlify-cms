@@ -4,6 +4,13 @@ title: '2019 [NEW] STONE ISXXND 메이드샵 레플리카 S급 싱크로율 99.9
 date: 2019-02-12T15:05:10.000Z
 description: >-
   Stone Island new top
+mainImage: '/img/top/20190212-stone-island/STONE-HOOODY-SP-ONE.jpg'
+sale: 72
+price: 80
+isSale: false
+sizes: ['s', 'm', 'l']
+colors: ['red', 'blue', 'white']
+itemCode: 'stoneIsland00101'
 tags:
   - top
   - stone-island

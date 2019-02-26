@@ -1,22 +1,21 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import { ThumbnailItem } from '../components/ThumbnailItem'
+import Layout from '../../components/Layout'
+import { ThumbnailItem } from '../../components/ThumbnailItem'
 
-class TagRoute extends React.Component {
+class SaleRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
-    const tag = this.props.pageContext.tag
     const title = this.props.data.site.siteMetadata.title
 
     return (
       <Layout>
         <section className="section">
-          <Helmet title={`${tag} | ${title}`} />
+          <Helmet title={`Sales | ${title}`} />
           <div className="container">
             <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">{tag}</h1>
+              <h1 className="has-text-weight-bold is-size-2">Sales</h1>
             </div>
             {posts.map(({ node: post }) => (
               <ThumbnailItem post={post} key={post.id}/>
@@ -28,10 +27,10 @@ class TagRoute extends React.Component {
   }
 }
 
-export default TagRoute
+export default SaleRoute
 
-export const tagPageQuery = graphql`
-  query TagPage($tag: String) {
+export const salePageQuery = graphql`
+  query SalePage {
     site {
       siteMetadata {
         title
@@ -40,7 +39,7 @@ export const tagPageQuery = graphql`
     allMarkdownRemark(
       limit: 1000
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      filter: { frontmatter: { isSale: { eq: true } } }
     ) {
       totalCount
       edges {

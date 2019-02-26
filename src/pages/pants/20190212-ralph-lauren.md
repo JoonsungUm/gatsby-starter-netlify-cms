@@ -4,6 +4,13 @@ title: '2019 [NEW] RALPH LAUREN WINTER TAN WASH JOGGER [International]'
 date: 2019-02-12T15:06:10.000Z
 description: >-
   Ralph Lauren new pants
+mainImage: '/img/pants/20190212-ralph-lauren/RL-JOGGER-BLACK-ONE.jpg'
+sale: 75
+price: 80
+isSale: false
+sizes: ['s', 'm', 'l']
+colors: ['red', 'blue', 'white']
+itemCode: 'ralphLauren00101'
 tags:
   - pants
   - ralph-lauren

@@ -4,6 +4,13 @@ title: '2017 NEW CHAMPION JAPAN X NANOUNIVERSE JAPAN -COLLABORATION-SOCKS 1PACK 
 date: 2019-02-12T15:04:12.000Z
 description: >-
   Champion new socks
+mainImage: '/img/accessories/20190212-champion/CHAMPION-SOCKS.jpg'
+sale: 22
+price: 24
+isSale: true
+sizes: ['s', 'm', 'l']
+colors: ['red', 'blue', 'white']
+itemCode: 'champion00101'
 tags:
   - accessories
   - socks

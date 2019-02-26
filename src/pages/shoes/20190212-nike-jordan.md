@@ -4,6 +4,13 @@ title: 'JORDAN 10 30주년 짐 레드 ★WTF BLACK FRIDAY SALE★ [International
 date: 2019-02-12T15:04:13.000Z
 description: >-
   Nike new Jordan 10
+mainImage: '/img/shoes/20190212-nike/jordan-10-deep-one.jpg'
+sale: 120
+price: 180
+isSale: true
+sizes: ['s', 'm', 'l']
+colors: ['red', 'blue', 'white']
+itemCode: 'nike00101'
 tags:
   - shoes
   - nike

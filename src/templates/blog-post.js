@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import ItemSpec from '../components/ItemSpec'
 
 export const BlogPostTemplate = ({
   content,
@@ -12,9 +13,11 @@ export const BlogPostTemplate = ({
   description,
   tags,
   title,
+  frontmatter,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
+  const { itemCode, colors, sizes, isSale, price, sale } = frontmatter
 
   return (
     <section className="section">
@@ -27,6 +30,7 @@ export const BlogPostTemplate = ({
             </h1>
             <p>{description}</p>
             <PostContent content={content} />
+            <ItemSpec itemCode={itemCode} colors={colors} sizes={sizes} isSale={isSale} price={price} sale={sale}/>
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
@@ -73,6 +77,7 @@ const BlogPost = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        frontmatter={post.frontmatter}
       />
     </Layout>
   )
@@ -96,6 +101,12 @@ export const pageQuery = graphql`
         title
         description
         tags
+        itemCode
+        colors
+        sizes
+        price
+        sale
+        isSale
       }
     }
   }
