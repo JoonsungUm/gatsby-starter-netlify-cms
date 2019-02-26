@@ -8,8 +8,6 @@ mainImage: '/img/accessories/20190212-champion/CHAMPION-SOCKS.jpg'
 sale: 22
 price: 24
 isSale: true
-sizes: ['s', 'm', 'l']
-colors: ['red', 'blue', 'white']
 itemCode: 'champion00101'
 tags:
   - accessories

@@ -9,7 +9,7 @@ export const ThumbnailItem = ({ post }) => {
     <>
       <div
         className="content"
-        style={{ border: '1px solid #333' }}
+        // style={{ border: '1px solid #333' }}
       >
         <Link className="has-text-primary" to={post.fields.slug}>
           <Img style={imageStyle} fluid={mainImage.childImageSharp.fluid} alt='' />

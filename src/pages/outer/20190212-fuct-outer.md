@@ -7,8 +7,6 @@ mainImage: '/img/outer/20190212-fuct/FUCT-CAMO-HUUUURIS-ONEEE.jpg'
 sale: 240
 price: 280
 isSale: false
-sizes: ['s', 'm', 'l']
-colors: ['red', 'blue', 'white']
 itemCode: 'fuct00101'
 tags:
   - outer

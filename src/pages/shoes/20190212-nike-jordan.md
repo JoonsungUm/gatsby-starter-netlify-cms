@@ -8,8 +8,6 @@ mainImage: '/img/shoes/20190212-nike/jordan-10-deep-one.jpg'
 sale: 120
 price: 180
 isSale: true
-sizes: ['s', 'm', 'l']
-colors: ['red', 'blue', 'white']
 itemCode: 'nike00101'
 tags:
   - shoes

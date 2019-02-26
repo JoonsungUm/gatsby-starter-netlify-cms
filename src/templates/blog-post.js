@@ -17,7 +17,7 @@ export const BlogPostTemplate = ({
   helmet,
 }) => {
   const PostContent = contentComponent || Content
-  const { itemCode, colors, sizes, isSale, price, sale } = frontmatter
+  const { itemCode, isSale, price, sale } = frontmatter
 
   return (
     <section className="section">
@@ -29,8 +29,9 @@ export const BlogPostTemplate = ({
               {title}
             </h1>
             <p>{description}</p>
+            <ItemSpec itemCode={itemCode} isSale={isSale} price={price} sale={sale}/>
             <PostContent content={content} />
-            <ItemSpec itemCode={itemCode} colors={colors} sizes={sizes} isSale={isSale} price={price} sale={sale}/>
+            <ItemSpec itemCode={itemCode} isSale={isSale} price={price} sale={sale}/>
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
@@ -102,8 +103,6 @@ export const pageQuery = graphql`
         description
         tags
         itemCode
-        colors
-        sizes
         price
         sale
         isSale

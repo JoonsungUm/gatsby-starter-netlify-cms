@@ -8,8 +8,6 @@ mainImage: '/img/top/20190212-stone-island/STONE-HOOODY-SP-ONE.jpg'
 sale: 72
 price: 80
 isSale: false
-sizes: ['s', 'm', 'l']
-colors: ['red', 'blue', 'white']
 itemCode: 'stoneIsland00101'
 tags:
   - top
